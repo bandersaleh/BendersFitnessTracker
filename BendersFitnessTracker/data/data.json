@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "user_id": 1001,
+    "user_gender": "male",
+    "user_age": 32,
+    "user_height_cm": 175,
+    "initial_weight_lbs": 178,
+    "target_weight_lbs": 168.7,
+    "recorded_date": "2026-06-07"
+  },
+  {
+    "id": 2,
+    "user_id": 1002,
+    "user_gender": "",
+    "user_age": "",
+    "user_height_cm": "",
+    "initial_weight_lbs": "",
+    "target_weight_lbs": "",
+    "recorded_date": ""
+  },
+  {
+    "id": 3,
+    "user_id": 1003,
+    "user_gender": "",
+    "user_age": "",
+    "user_height_cm": "",
+    "initial_weight_lbs": "",
+    "target_weight_lbs": "",
+    "recorded_date": ""
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "user_id": 1001,
+    "tracker_date": "2026-06-07",
+    "calories_ate": 1800,
+    "calories_burned": 400
+  },
+  {
+    "id": 2,
+    "user_id": 1001,
+    "tracker_date": "2026-06-08",
+    "calories_ate": 2100,
+    "calories_burned": 100
+  },
+  {
+    "id": 3,
+    "user_id": 1002,
+    "tracker_date": "2026-06-07",
+    "calories_ate": 2400,
+    "calories_burned": 500
+  },
+  {
+    "id": 4,
+    "user_id": 1002,
+    "tracker_date": "2026-06-08",
+    "calories_ate": 2200,
+    "calories_burned": 300
+  },
+  {
+    "id": 5,
+    "user_id": 1003,
+    "tracker_date": "",
+    "calories_ate": "",
+    "calories_burned": ""
+  }
+]
