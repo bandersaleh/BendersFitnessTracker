@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Provider as PaperProvider } from "react-native-paper";
-import { Ionicons } from "@expo/vector-icons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { StatusBar } from "expo-status-bar"; //native feature
+import { NavigationContainer } from "@react-navigation/native"; //native feature
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"; //native feature
+import { Provider as PaperProvider } from "react-native-paper"; //native feature style element
+import { Ionicons } from "@expo/vector-icons"; //native feature styled icons
+import AsyncStorage from "@react-native-async-storage/async-storage"; //native feature lets the app save data locally on the phone/device
 
 import HomeScreen from "./screens/HomeScreen";
 import TrackerScreen from "./screens/TrackerScreen";
