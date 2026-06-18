@@ -16,6 +16,14 @@ import defaultTrackerData from "./data/tracker.json";
 
 const Tab = createBottomTabNavigator();
 
+// App-wide state management.
+// - accounts: all available user accounts
+//     - currentUser: the currently logged-in user
+//     - userData: body specs and goal data for users
+//     - trackerData: calendar calorie records for users
+//     - isReady: controls whether stored data has finished loading before rendering
+// displayed data comes
+// from state, and any state update automatically re-renders the affected screens.
 export default function App() {
   const [accounts, setAccounts] = useState(defaultAccounts);
   const [currentUser, setCurrentUser] = useState(null);
@@ -24,9 +32,14 @@ export default function App() {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    loadSavedData();
+    loadSavedData(); // This uses the React lifecycle efficiently because the app loads persistent data once at startup, then lets state updates handle future UI changes.
   }, []);
 
+
+    // 1. Check AsyncStorage for saved accounts, current user, body specs, and tracker data.
+    // 2. If saved data exists, replace the starter JSON state with saved data.
+    // 3. If saved data does not exist, keep the default JSON starter data.
+    // 4. Set isReady to true so the app can safely render.
   const loadSavedData = async () => {
     try {
       const savedAccounts = await AsyncStorage.getItem("accounts");
@@ -44,6 +57,8 @@ export default function App() {
       setIsReady(true);
     }
   };
+
+  // Functions used by useState, useEffect, AsyncStorage
 
   const saveAccounts = async (newAccounts) => {
     setAccounts(newAccounts);
